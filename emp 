@@ -1,0 +1,13 @@
+employee_data = {
+    26199: {"salary": 50000, "bonus": 5000},
+    # ... other employee records ...
+}
+
+emp_id = int(input("Enter employee ID: "))
+info = employee_data.get(emp_id)
+if info:
+    print(f"Salary: {info['salary']}, Bonus: {info['bonus']}")
+    # You can add more employee-related operations here
+else:
+    print("Employee ID not found.")
+    
